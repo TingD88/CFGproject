@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+
+    <title>Weekly Meal Calendar</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Choose a dish</h1>
+
+        <div class="dish__container">
+            <div class="dish__name" id="tunapasta" style="background-color: #41faad;">Tuna Sweetcorn Pasta</div>
+            <div class="dish__name" id="bolognese" style="background-color: #f68080">Spaghetti Bolognese</div>
+            <div class="dish__name" id="chickencurry" style="background-color: #faae7b">Japanese Chicken Curry</div>
+            <div class="dish__name" id="beansontoast" style="background-color: #2a9d8f">Beans on toast</div>
+            <div class="dish__name" id="dumpling" style="background-color: #34dd3c">Dumpling</div>
+            <div class="dish__name" id="fishfingers" style="background-color: #bdb2ff">Fish fingers & Chip</div>
+            <div class="dish__name" id="deselect">Deselect All</div>
+
+        </div>
+
+        <h3>Add selected dish to the schedule</h3>
+
+        <div class="schedule__container">
+            <div class="days__container">
+                <span class="corner"></span>
+                <div class="day">Sunday</div>
+                <div class="day">Monday</div>
+                <div class="day">Tuesday</div>
+                <div class="day">Wednesday</div>
+                <div class="day">Thursday</div>
+                <div class="day">Friday</div>
+                <div class="day">Saturday</div>
+            </div>
+            <div class="dish__container ">
+                <span class="time">5pm <br> - <br> 7:30pm</span>
+                <div class="dish"></div>
+                <div class="dish"></div>
+                <div class="dish"></div>
+                <div class="dish"></div>
+                <div class="dish"></div>
+                <div class="dish"></div>
+                <div class="dish"></div>
+            </div>
+           
+             
+        </div>
+
+        <button class="deleteBtn">Reset Schedule</button>
+
+        <div class="pop-up__container">
+            <div class="pop-up">
+                <h4>Are you sure you want to reschedule all?</h4>
+                <div class="btn__container">
+                    <div class="btn__answer" id="btn__yes">YES</div>
+                    <div class="btn__answer" id="btn__no">NO</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
